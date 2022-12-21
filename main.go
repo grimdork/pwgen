@@ -51,12 +51,6 @@ func main() {
 		return
 	}
 
-	// Issues with TinyGo; temporarily removed.
-	// w, _, err := terminal.GetSize(int(os.Stdout.Fd()))
-	// if err != nil {
-	// 	pr("Couldn't get terminal width: %s", err.Error())
-	// 	os.Exit(2)
-	// }
 	w := 120
 	length := opt.GetInt("length")
 	maxcount := opt.GetInt("count")
